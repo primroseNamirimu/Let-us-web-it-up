@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration page</title>
+         <link rel="stylesheet" type="text/css" href="bootstrap.css"> 
+         <?php include 'registration.php';?>
+        
+    </head>
+    <body>
+        <div class = "container">
+            <div class="row col-md-6 col-md-offset-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading text-center" >
+                           <h1>Registration Form</h1>
+                    </div>
+                    <div class="panel-body">
+                          <form action="registration.php" method="POST">  
+                              <div class="form-group">
+                                <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstname"/>
+                              </div>
+                              <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" name="lastname"/>
+                              </div>
+                             <div class="form-group">
+                                  <label>Gender</label>
+                                  <div>
+                                    <label for="female" class="radio-inline"><input type="radio" id="female" name="gender" value="female"> Female</label>
+                                    <label for="male" class="radio-inline"><input type="radio" id="male" name="gender" value="male">Male</label>
+                                    <label for="other" class="radio-inline"><input type="radio" id="other" name="gender" value="other">Other</label>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" id="email" name="email"/>
+                              </div>
+                              <div class="form-group">
+                                <label for="username">User Name</label>
+                                <input type="text" class="form-control" id="username" name="username"/>
+                              </div>  
+                              <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" name="pasword"/>
+                                </div>
+                              <div class="form-group">
+                                <label for="confirmpassword">Confirm Password</label>
+                                <input type="password" class="form-control" id="phone" name="confirmpassword"/>
+                              </div>
+                              <div class="form-group">
+                                <label for="phonenumber">Phone Number</label>
+                                <input type="text" class="form-control" id="email" name="phonenumber"/>
+                              </div>
+                              <div>
+                                <input type="submit" value="Submit" class="btn btn-primary" name="signup-submit">   
+                                
+                              </div>
+                                                 
+                            </div>
+                            <div class="panel-body ">
+                              <small> Already have an account</small> 
+                              <a href="login.html">LOG IN HERE</a> 
+                          </div>   
+                      
+                          </form>
+                          
+                          <div class="panel-footer text-right">
+                        <small> &copy; DS</small>
+                    </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+       
+    </body>
+
+</html> 
